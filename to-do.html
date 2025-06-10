@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>inputBoxValue</div>
+        <input type="text">
+    <button onclick="addToDo()"> Add ToDo</button>
+    
+</body>
+<script>
+    function addToDo(){
+        const inputBoxValue = document.querySelector("input").value;
+        const newDiv = document.createElement("div");
+        newDiv.innerText = inputBoxValue;
+        document.querySelector("body").appendChild(newDiv)
+    }
+</script>  
+</html>
